@@ -30,7 +30,6 @@ import com.braintreepayments.api.paypal.PayPalPaymentAuthResult
 import com.braintreepayments.api.paypal.PayPalPaymentIntent
 import com.braintreepayments.api.paypal.PayPalPaymentUserAction
 import com.braintreepayments.api.paypal.PayPalPendingRequest
-import com.braintreepayments.api.paypal.PayPalPhoneNumber
 import com.braintreepayments.api.paypal.PayPalRequest
 import com.braintreepayments.api.paypal.PayPalResult
 import com.braintreepayments.api.paypal.PayPalVaultRequest
