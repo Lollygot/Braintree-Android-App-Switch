@@ -2,7 +2,7 @@
 
 This is a demo of app switch for Android.
 
-> **_NOTE_**: The code has been defined to my server-side schema, endpoint names, and uses my MAID naming. You will likely have to use my own server-side code
+> **_NOTE_**: The code has been defined to my server-side schema, endpoint names, and uses my MAID naming. You will likely have to use my own server-side code which can be found here: https://github.com/Lollygot/PPCP-BT-Demo.
 
 > _Note_: This code and setup has only been tested on Windows using the Android Studio "Medium Phone" API 35 emulator
 
