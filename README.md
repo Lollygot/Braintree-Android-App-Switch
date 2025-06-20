@@ -41,7 +41,7 @@ The release sandbox app that is publicly available for merchants to install does
 
 The debug build of the app points to the live endpoint by default. You need to configure it to point to the sandbox endpoint.
 
-> _Note_: I haven't tested yet if the isPermissiveSSLEnabled configuration is actually needed or not
+> _Note_: The isPermissiveSSLEnabled configuration is actually not needed
 
 1. Follow these steps to configure the debug PayPal app (under section "Android PayPal app changes"): https://paypal.atlassian.net/wiki/spaces/Checkout/pages/1129122168/Android+Stage+Testing+instructions+for+BT+Demo+app+and+In+App+Checkout+in+Venice#Android-PayPal-app-changes.
 2. Instead of creating a new endpoint that points to the staging or QA environment, instead just choose the sandbox endpoint that's in the list ("https://api.sandbox.paypal.com").
@@ -49,25 +49,9 @@ The debug build of the app points to the live endpoint by default. You need to c
 
 ### Enable App Links for the Debug PayPal App and for this Demo App
 
-> _Note_: I haven't tested yet if this is actually needed and what happens if the user doesn't do this. For the actual demo app, I would assume that the fallback deep link passed to the PayPalClient is used instead of the app link and feel that this probably isn't needed
-
 App links are a way to identify an app using a HTTP or HTTPS scheme (URL) and is used as part of the redirection between apps.
 
 Follow these steps to enable app links on the Debug PayPal app and on the demo app (under section "On both PayPal and Demo app verify PayPal app links"): https://paypal.atlassian.net/wiki/spaces/Checkout/pages/1129122168/Android+Stage+Testing+instructions+for+BT+Demo+app+and+In+App+Checkout+in+Venice#On-both-PayPal-and-Demo-app-verify-PayPal-app-links.
-
-### Enable Fingerprint Login and LLS on the Debug PayPal App
-
-> _Note_: I haven't tested yet if this is actually needed and what happens if the user doesn't do this. I have a feeling that this isn't needed since a workaround is needed to enable this on the sandbox app, but I haven't tried doing this without enabling it yet
-
-1. On the PayPal Developer Settings app, configure the endpoint to point to the "api-braintree-stage" endpoint in the list (search for it) which should be "https://api.braintree.stage.paypal.com".
-2. Kill the PayPal Developer Settings app and open the PayPal app.
-3. Go through the screens and create a new PayPal account in the staging environment through the app. You may need to create a US account (I haven't tested this without creating a US account).
-4. Follow these steps to enable fingerprint login: https://paypal.atlassian.net/wiki/spaces/Checkout/pages/1104839967/Fingerprint+-+tutorial+for+android+studio+emulator.
-5. On the same screen as where you enabled fingerprint login, also enable LLS by toggling the "Extend your login session" option.
-6. Kill the PayPal app and open the PayPal Developer Settings app.
-7. Configure the endpoint to point back to the sandbox endpoint.
-8. Kill the PayPal Developer Settings app and open the PayPal app.
-9. Login with personal sandbox account credentials.
 
 ## Development Notes
 
