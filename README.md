@@ -41,11 +41,11 @@ The release sandbox app that is publicly available for merchants to install does
 
 The debug build of the app points to the live endpoint by default. You need to configure it to point to the sandbox endpoint.
 
-> _Note_: The isPermissiveSSLEnabled configuration is actually not needed
-
-1. Follow these steps to configure the debug PayPal app (under section "Android PayPal app changes"): https://paypal.atlassian.net/wiki/spaces/Checkout/pages/1129122168/Android+Stage+Testing+instructions+for+BT+Demo+app+and+In+App+Checkout+in+Venice#Android-PayPal-app-changes.
-2. Instead of creating a new endpoint that points to the staging or QA environment, instead just choose the sandbox endpoint that's in the list ("https://api.sandbox.paypal.com").
-3. Login to a personal sandbox account. You should see a screen saying something about how this is a sandbox app, and there shouldn't be any functionality to the app.
+1. Open the "PayPal Developer Settings" app
+2. Open the "Endpoints" tab
+3. In here, open the sandbox endpoint in the list and click the select button ("https://api.sandbox.paypal.com")
+4. Kill the "PayPal Developer Settings" app and open the "PayPal" app
+5. Log in to a personal sandbox account. You should see a screen saying something about how this is a sandbox app, and there shouldn't be any functionality to the app.
 
 ### Enable App Links for the Debug PayPal App and for this Demo App
 
